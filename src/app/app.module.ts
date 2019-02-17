@@ -8,11 +8,13 @@ import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
           MatListModule, MatMenuModule, MatCardModule } from '@angular/material';
+import { MyScheduleComponent } from './my-schedule/my-schedule.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyNavComponent
+    MyNavComponent,
+    MyScheduleComponent
   ],
   imports: [
     BrowserModule,
