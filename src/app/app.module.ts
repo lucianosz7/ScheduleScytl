@@ -7,14 +7,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule,
-          MatListModule, MatMenuModule, MatCardModule } from '@angular/material';
+          MatListModule, MatMenuModule, MatCardModule, MatFormFieldModule, 
+          MatInputModule, MatOptionModule, MatSelectModule, MatCheckboxModule,
+          MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 import { MyScheduleComponent } from './my-schedule/my-schedule.component';
+import { NewTaskComponent } from './new-task/new-task.component';
+import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyNavComponent,
-    MyScheduleComponent
+    MyScheduleComponent,
+    NewTaskComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +33,17 @@ import { MyScheduleComponent } from './my-schedule/my-schedule.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

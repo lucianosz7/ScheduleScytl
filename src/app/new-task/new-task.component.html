@@ -26,10 +26,22 @@
   </mat-sidenav-content>
 </mat-sidenav-container>
 <mat-card id="main">
-  <mat-action-list>
-    <button mat-list-item (click)="save()"> Save </button>
-    <button mat-list-item (click)="undo()"> Undo </button>
-
-    <button id="CNS" mat-raised-button (click)="CreateNS()">Create New Schedule</button>
-  </mat-action-list>
+  <mat-card class="formField">
+    <mat-form-field>
+      <input matInput placeholder="Title">
+    </mat-form-field>
+    <textarea type="text" id="descBox" placeholder="Description" rows="5" mdbInput></textarea>
+    <div id="check" >
+      <p id="scheduleCompleted">Is the schedule completed?</p>
+      <mat-checkbox id="check1" [formControl]="disableSelect">No</mat-checkbox>
+      <mat-checkbox id="check2" [formControl]="disableSelect">Yes</mat-checkbox>
+    </div>
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker2" placeholder="Deadline"
+             [formControl]="serializedDate">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+    
+  </mat-card>
 </mat-card>

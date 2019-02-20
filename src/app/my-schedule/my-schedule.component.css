@@ -16,4 +16,11 @@
     top: 0;
     z-index: 1;
   }
-  
+  #CNS{
+      margin-left: 70px;
+      margin-right: 50px;
+      margin-top:  120%;
+  }
+  #main{
+    background-color: #E0E0E0;
+  }

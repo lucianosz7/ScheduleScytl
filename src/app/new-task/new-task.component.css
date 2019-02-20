@@ -1,0 +1,52 @@
+.sidenav-container {
+    display: flex;
+    height: 100%;
+    background-color: #E0E0E0;
+}
+
+.sidenav {
+    width: 100px;
+}
+
+.sidenav .mat-toolbar {
+    background: inhert;
+}
+.mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#main{
+    background-color: #E0E0E0;
+}
+.formField{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formField > * {
+    width: 100%;
+  }
+
+#descBox{
+    margin-bottom: 15px;
+}
+
+p{
+    margin-left: 5px;
+    float: left;
+    font-size: 14px;
+}
+#check2{
+    padding-top: 12px;
+    float: right;
+}
+#check1{
+    padding-top: 12px;
+    float: right;
+}
+mat-checkbox{
+    font-size: 12px;
+    height: 10px;
+}
+

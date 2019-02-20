@@ -3,6 +3,7 @@ import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MyNavComponent } from './my-nav/my-nav.component';
+import { NewTaskComponent } from './new-task/new-task.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'mySchedules',
     component: MyScheduleComponent
+  },
+  {
+    path: 'newTask',
+    component: NewTaskComponent
   }
 ];
 
