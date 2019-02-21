@@ -29,7 +29,7 @@
   }
 
 #descBox{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 p{
@@ -50,3 +50,6 @@ mat-checkbox{
     height: 10px;
 }
 
+#button-create{
+    background-color: #89c249;
+}
